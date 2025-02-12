@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #0d0d0d, #333333);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    padding: 40px;
+    border: 1px solid #cd7059;
+    border-radius: 10px;
+    width: 320px;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+}
+
+.container:hover {
+    transform: scale(1.05);
+}
+
+h1 {
+    color: #cd7059;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+h1:hover {
+    color: #fff;
+}
+
+label, select {
+    display: block;
+    margin: 15px auto;
+    background-color: #333;
+    color: #fff;
+    border: 1px solid #555;
+    padding: 10px;
+    width: 80%;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+label:hover, select:hover {
+    background-color: #cd7059;
+    transform: scale(1.05);
+}
+
+#result {
+    margin-top: 20px;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.result p {
+    font-size: 1.2em;
+    color: #cd7059;
+    transition: color 0.3s ease;
+}
+
+#converted-tonality {
+    font-weight: bold;
+    font-size: 1.5em;
+    color: #ffffff;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+
+#converted-tonality:hover {
+    color: #cd7059;
+}
+
+@media (max-width: 600px) {
+    .container {
+        width: 80%;
+        padding: 20px;
+    }
+}
